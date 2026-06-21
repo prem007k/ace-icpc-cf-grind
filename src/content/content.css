@@ -1,0 +1,105 @@
+#ace-sidebar {
+  position: fixed;
+  top: 90px;
+  right: 16px;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #14181f;
+  color: #e6e9ef;
+  border: 1px solid #2a3140;
+  border-radius: 10px;
+  padding: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  z-index: 99999;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+#ace-sidebar h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#ace-sidebar .ace-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+#ace-sidebar .ace-easier { background: #1f6b3a; color: #d7ffe6; }
+#ace-sidebar .ace-appropriate { background: #1e5fa8; color: #dceeff; }
+#ace-sidebar .ace-challenging { background: #a8731e; color: #fff1da; }
+#ace-sidebar .ace-veryhard { background: #a8241e; color: #ffe0de; }
+
+#ace-sidebar .ace-tag {
+  display: inline-block;
+  background: #232b3a;
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin: 2px 3px 0 0;
+  font-size: 11px;
+}
+
+#ace-sidebar .ace-hint-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+#ace-sidebar button {
+  background: #1e90d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#ace-sidebar button:hover {
+  background: #1779b3;
+}
+
+#ace-sidebar button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#ace-sidebar .ace-hint-output {
+  margin-top: 10px;
+  background: #0d1117;
+  border: 1px solid #232b3a;
+  border-radius: 8px;
+  padding: 8px;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+#ace-sidebar .ace-toggle {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  color: #8b97ab;
+  font-size: 14px;
+  padding: 0 4px;
+}
+
+#ace-sidebar .ace-error {
+  color: #ff9b95;
+}
+
+#ace-sidebar .ace-prob {
+  color: #9aa7bd;
+  margin-bottom: 6px;
+}

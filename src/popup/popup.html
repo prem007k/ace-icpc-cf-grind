@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ACE ICPC | CF GRIND</title>
+  <link rel="stylesheet" href="./popup.css" />
+</head>
+<body class="theme-dark">
+  <div id="app">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-icon">🏆</span>
+        <div>
+          <h1>ACE ICPC <span class="sep">|</span> CF GRIND</h1>
+          <p class="tagline">Your personal Codeforces coach</p>
+        </div>
+      </div>
+      <button id="settings-btn" class="icon-btn" title="Settings">⚙️</button>
+    </header>
+
+    <section id="handle-form" class="card">
+      <label for="handle-input">Codeforces handle</label>
+      <div class="handle-row">
+        <input id="handle-input" type="text" placeholder="e.g. tourist" autocomplete="off" />
+        <button id="load-btn">Load</button>
+      </div>
+      <div id="handle-error" class="error-text"></div>
+    </section>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Crunching your Codeforces data…</p>
+    </div>
+
+    <nav id="tabs" class="tabs hidden">
+      <button class="tab-btn active" data-tab="profile">Profile</button>
+      <button class="tab-btn" data-tab="topics">Topics</button>
+      <button class="tab-btn" data-tab="coach">Grind Coach</button>
+      <button class="tab-btn" data-tab="recs">Recommend</button>
+      <button class="tab-btn" data-tab="contests">Contests</button>
+      <button class="tab-btn" data-tab="streak">Streak</button>
+    </nav>
+
+    <main id="panels" class="panels hidden">
+      <section id="panel-profile" class="panel active"></section>
+      <section id="panel-topics" class="panel"></section>
+      <section id="panel-coach" class="panel"></section>
+      <section id="panel-recs" class="panel"></section>
+      <section id="panel-contests" class="panel"></section>
+      <section id="panel-streak" class="panel"></section>
+    </main>
+  </div>
+  <script type="module" src="./popup.ts"></script>
+</body>
+</html>
